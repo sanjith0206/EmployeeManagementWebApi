@@ -1,26 +1,29 @@
 # Employee Management System - Backend API
 
 ## Overview
-This project is a backend application built using C# and .NET Web API to manage employee data. It provides a set of APIs to perform CRUD operations and follows a clean and structured architecture.
+This project is a backend application built using C# and .NET Web API to manage employee data. It provides APIs to perform CRUD operations with a structured and maintainable design.
 
-## What This Project Does
-- Create new employee records
-- Retrieve all employees
-- Retrieve a specific employee by ID
+## Features
+- Create employee
+- Get all employees
+- Get employee by ID
 - Update employee details
-- Perform soft delete (mark employee as inactive instead of deleting)
+- Soft delete (mark employee as inactive)
 
-## Technologies Used
+## API Endpoints
+- GET    /api/employee        → Get all employees
+- GET    /api/employee/{id}   → Get employee by ID
+- POST   /api/employee        → Create new employee
+- PUT    /api/employee/{id}   → Update employee
+- DELETE /api/employee/{id}   → Soft delete employee
+
+## Technologies
 - C#
 - .NET Web API
 - Entity Framework Core
 - SQL Server
 
-## Key Concepts Implemented
+## Key Highlights
 - Layered architecture (Controller, Service, DTO, DbContext)
-- Separation of concerns
 - Soft delete using `IsActive` flag
-- RESTful API design
-
-## Purpose
-This project was developed to understand backend development, API design, and database interaction using .NET.
+- Clean and scalable design
